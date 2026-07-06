@@ -2972,19 +2972,22 @@ a {
 
 @media (max-width: 620px) {
   .page-shell {
+    align-items: stretch;
+    gap: 28px;
     padding: 12px;
+    overflow-x: hidden;
   }
 
   .cv-block,
   .project-block {
     padding: 0;
-    gap: 12px;
+    gap: 16px;
   }
 
   .about-block {
     grid-template-columns: 1fr;
     padding: 0;
-    gap: 12px;
+    gap: 16px;
   }
 
   .cv-column-left {
@@ -3007,6 +3010,17 @@ a {
     width: 100%;
   }
 
+  .photo-card {
+    height: auto;
+    aspect-ratio: 2040 / 2272;
+  }
+
+  .photo-frame img,
+  .project-visual > img,
+  .about-photo img {
+    object-fit: cover;
+  }
+
   .about-text-card,
   .about-contact-bar {
     grid-column: auto;
@@ -3014,6 +3028,8 @@ a {
 
   .about-text-card {
     height: auto;
+    gap: 12px;
+    padding: 18px;
   }
 
   .about-text-card h2,
@@ -3021,11 +3037,33 @@ a {
     width: 100%;
   }
 
+  .about-text-card h2,
+  .projects-card h2,
+  .bio-card h1,
+  .project-summary-card h2,
+  .project-description-card h2 {
+    font-size: 20px;
+  }
+
+  .about-text-card p,
+  .bio-content p,
+  .project-description-card p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
   .about-photo {
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1;
   }
+
+  .about-photo-event { aspect-ratio: 2955 / 3855; }
+  .about-photo-book-orange { aspect-ratio: 1840 / 2680; }
+  .about-photo-book-jung { aspect-ratio: 1840 / 2680; }
+  .about-photo-book-form { aspect-ratio: 2550 / 2680; }
+  .about-photo-painting-blue { aspect-ratio: 4680 / 3480; }
+  .about-photo-drawing { aspect-ratio: 4680 / 3480; }
+  .about-photo-house { aspect-ratio: 3345 / 5715; }
 
   .about-photo img {
     inset: 0;
@@ -3038,16 +3076,13 @@ a {
     height: auto;
     flex-wrap: wrap;
     gap: 12px;
+    padding: 12px;
   }
 
   .about-social-row {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
-  }
-
-  .photo-card {
-    height: 284px;
   }
 
   .tools-card,
@@ -3067,35 +3102,55 @@ a {
     flex-wrap: wrap;
   }
 
+  .icon-stack {
+    width: 100%;
+    min-height: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .bio-content,
   .projects-list {
     width: 100%;
   }
 
+  .bio-card,
+  .projects-card,
+  .project-summary-card,
+  .project-description-card {
+    padding: 18px;
+  }
+
   .projects-card {
     height: auto;
-    min-height: 320px;
+    min-height: 0;
+  }
+
+  .projects-list {
+    height: auto;
+    margin-top: 14px;
   }
 
   .project-visual {
     height: auto;
     min-height: 0;
-    aspect-ratio: 53 / 60;
+    aspect-ratio: 1590 / 1800;
   }
 
   .project-info-column {
     height: auto;
-    gap: 12px;
+    gap: 16px;
   }
 
   .project-summary-card,
   .project-description-card {
     height: auto;
+    min-height: 0;
   }
 
   .project-tags {
     flex-wrap: wrap;
-    margin-top: 56px;
+    margin-top: 28px;
   }
 
   .project-description-card h2,
@@ -3105,9 +3160,12 @@ a {
   }
 
   .project-link {
-    align-items: flex-start;
+    align-items: center;
+    min-height: 64px;
     padding-top: 12px;
     padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .roots-about-section {
