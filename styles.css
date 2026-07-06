@@ -374,11 +374,13 @@ a {
 }
 
 .arrow-chip {
+  position: relative;
   width: 32px;
   height: 32px;
   flex: 0 0 32px;
   display: grid;
   place-items: center;
+  font-size: 0;
   border: 0.64px solid #f4f4f4;
   border-radius: 32px;
   background: var(--surface);
@@ -387,10 +389,26 @@ a {
     border-color 160ms ease;
 }
 
-.arrow-chip img {
-  width: 25.6px;
-  height: 25.6px;
-  transition: filter 160ms ease;
+.arrow-chip::before,
+.project-open-chip::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: translateX(2px) rotate(45deg);
+}
+
+.arrow-chip::after,
+.project-open-chip::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transform: translateX(-1px);
 }
 
 .project-link:hover .arrow-chip,
@@ -400,10 +418,10 @@ a {
   background: var(--muted);
 }
 
-.project-link:hover .arrow-chip img,
-.project-link:focus-visible .arrow-chip img,
-.project-link:active .arrow-chip img {
-  filter: brightness(0) invert(1);
+.project-link:hover .arrow-chip,
+.project-link:focus-visible .arrow-chip,
+.project-link:active .arrow-chip {
+  color: #fff;
 }
 
 .social-row a {
@@ -454,16 +472,13 @@ a {
   flex: 0 0 32px;
   display: grid;
   place-items: center;
+  font-size: 0;
   border: 0.64px solid #f4f4f4;
   border-radius: 32px;
   transition:
     transform 160ms ease,
     background-color 160ms ease;
-}
-
-.project-open-chip img {
-  width: 25.6px;
-  height: 25.6px;
+  color: #fff;
 }
 
 .project-visual:hover .project-open-chip,
