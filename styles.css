@@ -3262,7 +3262,7 @@ a {
 
   .roots-task-card {
     height: auto;
-    min-height: 760px;
+    min-height: 660px;
     margin-top: 72px;
     padding: 32px 24px;
     border-radius: clamp(8px, 2.4vw, 14px);
@@ -3270,7 +3270,7 @@ a {
 
   .roots-task-card > img {
     top: 0;
-    left: -86%;
+    left: -104%;
     width: auto;
     height: 100%;
     object-fit: contain;
