@@ -3210,17 +3210,17 @@ a {
   }
 
   .roots-case-hero {
-    height: 68vh;
-    min-height: 520px;
-    max-height: 680px;
+    height: 62vh;
+    min-height: 430px;
+    max-height: 560px;
     aspect-ratio: auto;
-    padding: 0;
+    padding: 0 18px 22px;
     overflow: hidden;
   }
 
   .roots-case-image {
     height: 100%;
-    border-radius: 0;
+    border-radius: var(--card-radius);
   }
 
   .roots-case-image img {
@@ -3229,7 +3229,7 @@ a {
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    transform: scale(1.42);
+    transform: scale(0.95);
     transform-origin: center;
   }
 
@@ -3268,10 +3268,10 @@ a {
 
   .roots-task-card > img {
     top: 0;
-    left: 0;
-    width: 116%;
+    left: -2%;
+    width: auto;
     height: 100%;
-    object-fit: fill;
+    object-fit: contain;
   }
 
   .roots-task-text {
