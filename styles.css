@@ -3214,13 +3214,14 @@ a {
     min-height: 430px;
     max-height: 560px;
     aspect-ratio: auto;
-    padding: 24px 20px 28px;
+    padding: 32px 20px 28px;
     overflow: hidden;
   }
 
   .roots-case-image {
     height: 100%;
     border-radius: clamp(16px, 6.4vw, 25px);
+    background: transparent;
   }
 
   .roots-case-image img {
@@ -3229,7 +3230,7 @@ a {
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    transform: scale(0.95);
+    transform: none;
     transform-origin: center;
   }
 
@@ -3268,9 +3269,9 @@ a {
 
   .roots-task-card > img {
     top: 0;
-    left: -28%;
+    left: -44%;
     width: auto;
-    height: 72%;
+    height: 100%;
     object-fit: contain;
   }
 
