@@ -1308,8 +1308,31 @@ a {
   left: var(--x);
   width: 15.4545%;
   height: 100.1362%;
-  border-left: 1.587px dashed #b8b09f;
-  border-right: 1.587px dashed #b8b09f;
+}
+
+.process-week::before,
+.process-week::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1.6px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #a89f8d 0,
+    #a89f8d 4px,
+    transparent 4px,
+    transparent 9px
+  );
+  pointer-events: none;
+}
+
+.process-week::before {
+  left: 0;
+}
+
+.process-week::after {
+  right: 0;
 }
 
 .process-week span {
@@ -3489,12 +3512,13 @@ a {
     left: auto;
     top: auto;
     width: 1100px;
+    height: 367px;
     max-width: none;
   }
 
-  .process-week {
-    border-left-width: 1.8px;
-    border-right-width: 1.8px;
+  .process-week::before,
+  .process-week::after {
+    width: 2px;
   }
 
   .process-week span {
