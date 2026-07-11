@@ -3952,8 +3952,10 @@ a {
   }
 
   .roots-task-card {
-    top: 41.5%;
-    height: 55%;
+    top: 40.5%;
+    height: 57%;
+    clip-path: inset(0 round clamp(4px, 1.5625vw, 30px));
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
   }
 
   .roots-task-card > img {
