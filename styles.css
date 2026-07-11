@@ -3952,12 +3952,13 @@ a {
   }
 
   .roots-task-card {
-    top: 42%;
-    height: 53%;
+    top: 43.5%;
+    height: 52%;
   }
 
   .roots-task-card > img {
     object-fit: cover;
+    object-position: 16% 50%;
   }
 
   .roots-task-text h2 {
@@ -3969,11 +3970,11 @@ a {
   }
 
   .roots-task-text-task {
-    top: 12%;
+    top: 12.5%;
   }
 
   .roots-task-text-goal {
-    top: 75%;
+    top: 70%;
   }
 
   .roots-research-section {
