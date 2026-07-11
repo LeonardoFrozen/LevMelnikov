@@ -3948,12 +3948,12 @@ a {
 
 @media (orientation: landscape) and (min-width: 621px) and (max-height: 620px) {
   .roots-about-section {
-    aspect-ratio: 1200 / 980;
+    aspect-ratio: 1200 / 1020;
   }
 
   .roots-task-card {
-    top: 40.5%;
-    height: 57%;
+    top: 42%;
+    height: 56%;
     clip-path: inset(0 round clamp(4px, 1.5625vw, 30px));
     -webkit-mask-image: -webkit-radial-gradient(white, black);
   }
