@@ -3948,12 +3948,28 @@ a {
 
 @media (orientation: landscape) and (min-width: 621px) and (max-height: 620px) {
   .roots-about-section {
-    aspect-ratio: 1200 / 760;
+    aspect-ratio: 1200 / 835;
   }
 
   .roots-task-card {
-    top: 40.5%;
-    height: 50.5%;
+    top: 39.5%;
+    height: 52.75%;
+  }
+
+  .roots-task-text h2 {
+    margin-bottom: 0.75vw;
+  }
+
+  .roots-task-text p {
+    line-height: 1.12;
+  }
+
+  .roots-task-text-task {
+    top: 15%;
+  }
+
+  .roots-task-text-goal {
+    top: 69%;
   }
 
   .roots-research-section {
