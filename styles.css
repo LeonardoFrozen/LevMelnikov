@@ -1,5 +1,4 @@
 :root {
-  --asset-sprite: url("https://www.figma.com/api/mcp/asset/a14ec272-a2e9-4546-84e0-f333217ca98d");
   --surface: #f2f2f7;
   --line: rgba(0, 0, 0, 0.1);
   --text: #000;
@@ -177,53 +176,86 @@ a {
 .sprite-icon::before {
   content: "";
   position: absolute;
-  width: 398.85%;
-  height: 408.24%;
-  background-image: var(--asset-sprite);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: #f7f7f7;
+  color: #111;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .sprite-figma::before {
-  left: -149.28%;
-  top: -27.75%;
+  content: "Fg";
+  color: #6f6a78;
 }
 
 .sprite-ai::before {
-  left: -28.78%;
-  top: -271.78%;
+  content: "Ai";
+  background: #fff2da;
+  color: #ff6a00;
 }
 
 .sprite-cinema::before {
-  left: -29.08%;
-  top: -27.55%;
+  content: "C4D";
+  color: #254fda;
+  font-size: 12px;
 }
 
 .sprite-ps::before {
-  left: -269.73%;
-  top: -27.55%;
+  content: "Ps";
+  background: #eaf4ff;
+  color: #1673ff;
 }
 
 .sprite-gmail::before {
-  left: -149.46%;
-  top: -149.49%;
+  content: "@";
+  color: #d94836;
+  font-size: 20px;
 }
 
 .sprite-vk::before {
-  left: -148.95%;
-  top: -271.78%;
+  content: "vk";
+  background: #eef5ff;
+  color: #2787f5;
+  font-size: 17px;
 }
 
 .sprite-cv::before {
-  left: -270.01%;
-  top: -271.78%;
+  content: "CV";
+  color: #111;
 }
 
 .sprite-telegram::before {
-  width: 400.58%;
-  height: 404.66%;
-  left: -271.03%;
-  top: -148.18%;
+  content: "tg";
+  background: #eef8ff;
+  color: #2aabee;
+  font-size: 17px;
+}
+
+.instagram-icon::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border: 2px solid #111;
+  border-radius: 10px;
+}
+
+.instagram-icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  transform: translate(-50%, -50%);
+  border: 2px solid #111;
+  border-radius: 50%;
+  box-shadow: 9px -9px 0 -6px #111;
 }
 
 .instagram-icon img {
@@ -233,6 +265,7 @@ a {
   width: 132%;
   height: 128.93%;
   max-width: none;
+  display: none;
 }
 
 .popover {
@@ -606,7 +639,6 @@ a {
 }
 
 .about-block {
-  --asset-sprite: url("https://www.figma.com/api/mcp/asset/fefeb1e1-4499-4b4b-985c-f4677d14222a");
   position: relative;
   width: min(100%, 1200px);
   height: 1328px;
