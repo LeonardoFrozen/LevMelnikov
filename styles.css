@@ -3489,8 +3489,9 @@ a {
 }
 
 .hsbc-jtbd-header p {
-  width: 100%;
+  width: calc(100% - max(9.75px, 2.5vw));
   margin: 0;
+  margin-left: max(9.75px, 2.5vw);
   color: #666;
   font-family: "Inter", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: max(5px, 1.143vw);
