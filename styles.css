@@ -3365,22 +3365,29 @@ a {
 }
 
 .hsbc-research-item {
-  display: flex;
-  gap: max(1.67px, 0.429vw);
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: max(1.67px, 0.429vw) minmax(0, 1fr);
+  column-gap: max(1.67px, 0.429vw);
+  align-items: start;
+}
+
+.hsbc-research-item::before {
+  content: "";
+  width: max(1.67px, 0.429vw);
+  height: max(1.67px, 0.429vw);
+  margin-top: 0.45em;
+  border-radius: 50%;
+  background: #000;
+  display: block;
 }
 
 .hsbc-research-item img {
-  width: max(1.67px, 0.429vw);
-  height: auto;
-  flex: 0 0 auto;
-  display: block;
-  max-width: none;
+  display: none;
 }
 
 .hsbc-research-item p {
-  flex: 1 1 auto;
   min-width: 0;
+  grid-column: 2;
 }
 
 .hsbc-research-stack {
