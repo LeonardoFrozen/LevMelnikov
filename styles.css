@@ -550,6 +550,11 @@ a {
   height: 100%;
 }
 
+.project-visual-hsbc > img {
+  object-fit: cover;
+  object-position: 44% center;
+}
+
 .project-open-chip {
   position: relative;
   z-index: 1;
