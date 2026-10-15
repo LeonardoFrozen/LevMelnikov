@@ -544,6 +544,18 @@ a {
   border-radius: var(--card-radius);
 }
 
+.project-visual-video > video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: var(--card-radius);
+  object-fit: cover;
+  object-position: center;
+  background: #c8a4f2;
+}
+
 .project-visual-cropped > img {
   inset: 0;
   width: 100%;
@@ -553,6 +565,11 @@ a {
 .project-visual-hsbc > img {
   object-fit: cover;
   object-position: 50% center;
+}
+
+.project-visual-hsbc > video {
+  object-position: center;
+  background: #eee;
 }
 
 .project-open-chip {
@@ -661,6 +678,254 @@ a {
 
 .project-description-card-wide p {
   width: 484px;
+}
+
+.sberkids-summary-card {
+  height: 221px;
+}
+
+.sberkids-summary-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sberkids-summary-header h2 {
+  width: 100%;
+}
+
+.sberkids-summary-header p {
+  width: 100%;
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sberkids-summary-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sberkids-tags span,
+.sberkids-year {
+  border: 0;
+  background: #fff;
+  color: var(--muted);
+}
+
+.sberkids-year {
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12.5px;
+  border-radius: 18.75px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.sberkids-work-card {
+  height: 359px;
+  gap: 15.625px;
+}
+
+.sberkids-work-card ul {
+  width: 484px;
+  margin: 0;
+  padding-left: 27px;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.sberkids-work-card li {
+  margin: 0;
+  padding-left: 0;
+}
+
+.project-block-sberkids .project-open-chip {
+  border: 0.64px solid #f4f4f4;
+  background: transparent;
+  color: #fff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.project-block-sberkids .project-visual:hover .project-open-chip,
+.project-block-sberkids .project-visual:focus-visible .project-open-chip {
+  border-color: #fff;
+  background: #fff;
+  color: var(--muted);
+}
+
+.roots-summary-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.roots-summary-header h2 {
+  width: 100%;
+}
+
+.roots-summary-header p {
+  width: 100%;
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.roots-summary-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.roots-tags span,
+.roots-year {
+  border: 0;
+  background: #fff;
+  color: var(--muted);
+}
+
+.roots-year {
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12.5px;
+  border-radius: 18.75px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.roots-work-card {
+  gap: 15.625px;
+}
+
+.roots-work-card ul {
+  width: 451.25px;
+  margin: 0;
+  padding-left: 27px;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.roots-work-card li {
+  margin: 0;
+  padding-left: 0;
+}
+
+.project-block-roots .project-open-chip {
+  border: 0.64px solid #f4f4f4;
+  background: transparent;
+  color: #fff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.project-block-roots .project-visual:hover .project-open-chip,
+.project-block-roots .project-visual:focus-visible .project-open-chip {
+  border-color: #fff;
+  background: #fff;
+  color: var(--muted);
+}
+
+.hsbc-summary-header {
+  width: 100%;
+  height: 83px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hsbc-summary-header h2 {
+  width: 100%;
+}
+
+.hsbc-summary-header p {
+  width: 100%;
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hsbc-summary-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hsbc-tags span,
+.hsbc-year {
+  border: 0;
+  background: #fff;
+  color: var(--muted);
+}
+
+.hsbc-year {
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12.5px;
+  border-radius: 18.75px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.hsbc-work-card ul {
+  width: 451.25px;
+  margin: 0;
+  padding-left: 27px;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+.hsbc-work-card li {
+  margin: 0;
+  padding-left: 0;
+}
+
+.project-block-hsbc .project-open-chip {
+  border: 0.64px solid #f4f4f4;
+  background: transparent;
+  color: #fff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.project-block-hsbc .project-visual:hover .project-open-chip,
+.project-block-hsbc .project-visual:focus-visible .project-open-chip {
+  border-color: #fff;
+  background: #fff;
+  color: var(--muted);
 }
 
 @media (min-width: 1241px) {
@@ -846,11 +1111,12 @@ a {
   position: absolute;
   top: 1169px;
   left: 335px;
-  width: 530px;
+  width: 576px;
   height: 99px;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 12px;
   padding: 12px;
 }
 
@@ -877,13 +1143,35 @@ a {
 }
 
 .about-contact-popover {
-  width: 164px;
+  width: 215px;
   height: 75px;
+  display: block;
+  text-align: left;
   border-radius: 14.725px;
 }
 
 .about-contact-popover::before {
   right: 16.93px;
+}
+
+.about-contact-popover p {
+  position: absolute;
+  top: 19px;
+  left: 14px;
+  width: 190px;
+  margin: 0;
+  transform: scaleX(1.11);
+  transform-origin: left top;
+}
+
+.about-contact-stars {
+  position: absolute;
+  top: 38px;
+  left: 166px;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .case-page {
@@ -5299,7 +5587,7 @@ a {
 
   .about-contact-bar {
     justify-self: center;
-    width: min(100%, 530px);
+    width: min(100%, 576px);
   }
 
   .about-callout {
@@ -6288,5 +6576,509 @@ a {
 
   .roots-business-card {
     height: auto;
+  }
+}
+
+/* Main page redesign from Figma */
+.cv-block-v2 {
+  min-height: 722.5px;
+  display: block;
+  padding: 60px;
+}
+
+.cv-main-grid {
+  display: grid;
+  grid-template-columns: 530px 530px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cv-left-grid {
+  width: 530px;
+  display: grid;
+  grid-template-columns: 255px 255px;
+  grid-template-rows: 285.5px 297px;
+  gap: 20px;
+}
+
+.cv-right-grid {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-photo-card,
+.home-stack-card,
+.home-projects-card,
+.home-social-card,
+.home-bio-card {
+  overflow: hidden;
+  border-radius: 25px;
+  background: var(--surface);
+}
+
+.home-photo-card {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.home-photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-stack-card {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12.5px;
+  padding: 12px;
+}
+
+.home-work-icons {
+  width: 74px;
+  height: 261.5px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12.5px;
+  overflow: hidden;
+}
+
+.home-work-icon-img,
+.home-social-icon-img {
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+  display: block;
+  object-fit: contain;
+}
+
+.home-popover {
+  position: relative;
+  align-self: flex-start;
+  margin-top: 0;
+  width: 143px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 13px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18.75px;
+  white-space: nowrap;
+  box-shadow: var(--soft-shadow);
+}
+
+.home-popover::before {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 17px;
+  top: -7px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 4px;
+  transform: rotate(45deg);
+}
+
+.home-projects-card {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  padding: 20px;
+}
+
+.home-projects-card h2 {
+  margin: 0 0 15.625px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.home-projects-list {
+  height: 171.25px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.home-project-link {
+  min-height: 55.9167px;
+  padding: 0 12.5px;
+  display: grid;
+  grid-template-columns: 1fr 32px;
+  gap: 6.25px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.home-project-link:last-child {
+  border-bottom: 0;
+}
+
+.home-arrow-chip {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 0.64px solid #f4f4f4;
+  border-radius: 50%;
+  background: var(--surface);
+  transition: background-color 180ms ease, border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.home-arrow-chip img {
+  width: 24px;
+  height: 24px;
+  transition: filter 180ms ease;
+}
+
+.home-project-link:hover .home-arrow-chip,
+.home-project-link:focus-visible .home-arrow-chip {
+  border-color: #707070;
+  background: #707070;
+  transform: translateY(-1px);
+}
+
+.home-project-link:hover .home-arrow-chip img,
+.home-project-link:focus-visible .home-arrow-chip img {
+  filter: brightness(0) invert(1);
+}
+
+.home-project-link:focus-visible {
+  outline: 2px solid #707070;
+  outline-offset: -2px;
+}
+
+.home-social-card {
+  height: 137px;
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12.5px;
+}
+
+.home-social-icons {
+  width: 326px;
+  height: 76px;
+  padding: 13px;
+  display: flex;
+  gap: 12.5px;
+  overflow: hidden;
+}
+
+.home-social-icons a {
+  width: 50px;
+  height: 50px;
+  display: block;
+  overflow: hidden;
+  border-radius: 12.5px;
+  transition: transform 180ms ease, box-shadow 180ms ease,
+    filter 180ms ease;
+}
+
+.home-social-icons a:hover,
+.home-social-icons a:focus-visible {
+  transform: translateY(-4px);
+  filter: brightness(1.04) saturate(1.06);
+  box-shadow: 0 1.25px 1.25px rgba(0, 0, 0, 0.1),
+    0 4.375px 2.188px rgba(0, 0, 0, 0.09),
+    0 10px 2.813px rgba(0, 0, 0, 0.05),
+    0 17.5px 3.438px rgba(0, 0, 0, 0.01);
+}
+
+.home-social-icons a:focus-visible {
+  outline: 2px solid #707070;
+  outline-offset: 2px;
+}
+
+.home-social-card .home-popover {
+  margin-top: 0;
+  width: 168px;
+}
+
+.home-social-card .home-popover::before {
+  right: 17px;
+}
+
+.home-bio-card {
+  height: 445px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.home-bio-header {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.home-bio-title-row {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.home-bio-card h1 {
+  margin: 0;
+  max-width: none;
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.25px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.home-location-pill,
+.home-tags span {
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18.75px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  box-shadow: var(--soft-shadow);
+}
+
+.home-location-pill {
+  width: 199.25px;
+  gap: 6.25px;
+  padding: 5px 12.5px;
+}
+
+.home-location-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  display: grid;
+  place-items: center;
+}
+
+.home-location-icon img {
+  width: 11px;
+  height: 15px;
+  display: block;
+  object-fit: contain;
+}
+
+.home-tags {
+  width: 199px;
+  display: flex;
+  gap: 6px;
+  justify-content: stretch;
+}
+
+.home-tags span {
+  padding: 5px 12.5px;
+}
+
+.home-tags span:first-child {
+  flex: 0 0 67px;
+}
+
+.home-tags span:last-child {
+  flex: 0 0 126px;
+}
+
+.home-bio-card p {
+  margin: 0;
+  width: 491px;
+  max-width: 100%;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1120px) {
+  .cv-block-v2 {
+    padding: 30px;
+  }
+
+  .cv-main-grid {
+    grid-template-columns: minmax(0, 530px);
+  }
+
+  .cv-left-grid,
+  .cv-right-grid {
+    width: min(100%, 530px);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-shell {
+    padding: 0;
+  }
+
+  .cv-block-v2 {
+    padding: 30px;
+  }
+
+  .cv-left-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .home-photo-card,
+  .home-stack-card,
+  .home-projects-card,
+  .home-social-card,
+  .home-bio-card {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .home-photo-card {
+    aspect-ratio: 255 / 285.5;
+  }
+
+  .home-stack-card,
+  .home-social-card,
+  .home-bio-card {
+    height: auto;
+  }
+
+  .home-projects-list {
+    height: auto;
+    gap: 12px;
+  }
+
+  .home-social-card,
+  .home-stack-card {
+    flex-wrap: wrap;
+  }
+
+  .home-social-icons {
+    width: 100%;
+  }
+
+  .home-popover,
+  .home-social-card .home-popover {
+    margin-top: 0;
+  }
+
+  .home-bio-header {
+    margin-bottom: 36px;
+    flex-direction: column;
+  }
+
+  .home-bio-card h1 {
+    font-size: 40px;
+  }
+
+  .home-bio-card p {
+    font-size: 26px;
+    line-height: 1;
+  }
+
+  .home-project-link {
+    font-size: 20px;
+  }
+
+  .sberkids-summary-header p {
+    font-size: 16px;
+  }
+
+  .roots-summary-header p {
+    font-size: 16px;
+  }
+
+  .hsbc-summary-header p {
+    font-size: 16px;
+  }
+
+  .sberkids-summary-footer {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .roots-summary-footer {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .hsbc-summary-footer {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .sberkids-tags {
+    margin-top: 0;
+    flex-wrap: nowrap;
+  }
+
+  .roots-tags {
+    margin-top: 0;
+    flex-wrap: nowrap;
+  }
+
+  .hsbc-tags {
+    margin-top: 0;
+    flex-wrap: nowrap;
+  }
+
+  .sberkids-tags span {
+    border: 0;
+  }
+
+  .roots-tags span {
+    border: 0;
+  }
+
+  .hsbc-tags span {
+    border: 0;
+  }
+
+  .sberkids-work-card ul {
+    width: 100%;
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .roots-work-card ul {
+    width: 100%;
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .hsbc-work-card ul {
+    width: 100%;
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 23px;
   }
 }
